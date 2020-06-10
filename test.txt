@@ -9,7 +9,7 @@ path: 1 đường dẫn, đến tên file hoặc tên folder
 git add .
 Trong project có tất cả bao nhiêu file bị thay đổi (thêm mới, sửa, xoá) và add vào.
 
-2. Mô tả cho mọi người biết mình vừa thay đổi cái gì
+2. Mô tả cho mọi người biết mình vừa thay đổi cái gì.
 git commit -m
 
 3. Đẩy code lên server
