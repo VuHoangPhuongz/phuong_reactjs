@@ -3,80 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FORM PET</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>pet</title>
 </head>
 <body>
     <div class="container">
-        <div class="left_col">
-            <h1>
-                <i class="fa fa-paw"></i>
-                PUPASSURE
-            </h1>
-            <img src="103311554_3039940802793480_3725874323049385618_n.jpg" alt="dog-img">
-        </div>
-        <div class="right_col">
-            <header>
-                <h1>Yay, puppies! Ensure your pup gets the best care!</h1>
-            </header>
-            <div class="item">
-                <div class="pet-name">
-                    <label for="pets-name">Name</label>
-                    <input type="text" name="pets_name" id="pets_name" placeholder="Pet's name">
+        <div class="content">
+            <div class="content-left">
+                <div class="brand">
+                    <i class="fas fa-paw"></i>
+                    <span>PUPASSURE</span>
                 </div>
-                <div class="pet-photo">
-                    <button><i class="fa fa-camera-retro"></i></button>
-                    <label for="pet-photo">Upload a photo</label>
-                </div>
+                <img src="../img/pet.png" alt="pet">
             </div>
-            <div class="item">
-                <div class="pet-breed">
-                    <label for="pets-breed">Breed</label>
-                    <input type="text" name="pets_breed" id="pets_breed" placeholder="Pet's breed">
+            <div class="content-right">
+                <div class="title-right">
+                    <p>Yay, puppies! Ensure your <br> pup gets the best care!</p>
                 </div>
-                <div class="birthday">
-                    <label for="pets-birthday">Birthday</label>
-                    <input type="text" name="pets_birthday" id="pets_birthday" placeholder="MM/DD/YYYY">
+                <div class="form-content">
+                    <form action="" method="POST" enctype="multipart/form-data">
+                        <div class="form-content-left">
+                            <div class="form-name">
+                                <label class="title-form">Name</label><br>
+                                <input type="text" name="name" id="name"  placeholder="Pet's name">
+                            </div>
+                            <div class="form-breed">
+                                <label class="title-form">Breed</label><br>
+                                <input type="text" name="breed" id="breed" placeholder="Pet's breed">
+                            </div>
+                            <div class="form-gender">
+                                <label class="title-form">Gender</label><br>
+                                <div class="form-radio-content">
+                                    <input type="radio" name="gender" id="female" class="form-input" checked>
+                                    <label for="female" class="form-label">Female</label>
+                                    <input type="radio" name="gender" id="male" class="form-input">
+                                    <label for="male" class="form-label">Male</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-content-right">
+                            <div class="upload">
+                                <label class="title-form"><br>
+                                    <label for="upload" class="camera-icon">
+                                        <i class="fas fa-camera-retro"></i>
+                                        <label for="upload">Upload a photo</label>
+                                    </label>
+                                    <input type="file" name="upload" id="upload">
+                                </label>
+                            </div>
+                            <div class="form-birthday">
+                                <label class="title-form">Birthday</label><br>
+                                <input type="datetime" name="birthday" id="birthday" placeholder="MM/DD/YYYY">
+                            </div>
+                            <div class="form-neuter">
+                                <label class="title-form">Spayed of Neutered</label><br>
+                                <div class="form-radio-content">
+                                    <input type="radio" name="neuter" id="spayed" class="form-input" checked>
+                                    <label for="spayed" class="form-label">Spayed</label>
+                                    <input type="radio" name="neuter" id="neutered" class="form-input">
+                                    <label for="neutered" class="form-label">Neutered</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="form-content-full">
+                            <div class="form-weight">
+                                <label  class="title-form">Weight</label><br>
+                                <div class="form-radio-content">
+                                    <input type="radio" name="weight" id="weight_s" class="form-input" checked>
+                                    <label for="weight_s" class="form-label">0-25 lbs</label>
+                                    <input type="radio" name="weight" id="weight_m" class="form-input">
+                                    <label for="weight_m" class="form-label">25-50 lbs</label>
+                                    <input type="radio" name="weight" id="weight_l" class="form-input">
+                                    <label for="weight_l" class="form-label">50-100 lbs</label>
+                                    <input type="radio" name="weight" id="weight_xl" class="form-input">
+                                    <label for="weight_xl" class="form-label">100+ lbs</label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-            </div>
-            <div class="item">
-                <div class="pet-gender">
-                    <label for="pets-gender-female">Gender</label>
-                    <div class="choice">
-                        <input type="radio" name="pets_gender" checked id="pets-gender-female">
-                        <label for="pets-gender-female">Female</label>
-                        <input type="radio" name="pets_gender" id="pets-gender-male">
-                        <label for="pets-gender-male">Male</label>
+                <div class="direc">
+                    <div class="btn">
+                        <button class="btn-next">Back</button>
+                        <button class="btn-Pre">Next</button>
+                        <div class="clearfix"></div>
                     </div>
                 </div>
-                <div class="pets-spayed-neutered">
-                    <label for="pets-spayed">Spayed or Neutered</label>
-                    <div class="choice">
-                        <input type="radio" value="spayed" name="spayed_neutered" checked id="pet-spayed">
-                        <label for="pet-spayed">Spayed</label>
-                        <input type="radio" value="neutered" name="spayed_neutered" id="pet-neutered">
-                        <label for="pet-neutered">Neutered</label>
-                    </div>
-                </div>
             </div>
-            <div class="pets-weight">
-                <label for="choice-weight-medium">Weight</label>
-                <div class="choice">
-                    <input type="radio" name="choice_weight" checked id="choice-weight-1">
-                    <label for="choice-weight-1">0-25 Ibs</label>
-                    <input type="radio" name="choice_weight" id="choice-weight-2">
-                    <label for="choice-weight-2">25-50 Ibs</label>
-                    <input type="radio" name="choice_weight" id="choice-weight-3">
-                    <label for="choice-weight-3">50-100 Ibs</label>
-                    <input type="radio" name="choice_weight" id="choice-weight-4">
-                    <label for="choice-weight-4">100+ Ibs</label>
-                </div>
-            </div>
-            <footer>
-                <button>Back</button>
-                <button id="next">Next</button>
-            </footer>
+            <div class="clearfix"></div>
         </div>
     </div>
 </body>
